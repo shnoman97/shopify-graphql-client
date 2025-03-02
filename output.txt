@@ -1,0 +1,109 @@
+Fetched products length: 18
+{
+  "id": "gid://shopify/Product/8593467441309",
+  "title": "The Inventory Not Tracked Snowboard",
+  "descriptionHtml": "",
+  "handle": "the-inventory-not-tracked-snowboard",
+  "createdAt": "2025-03-02T16:04:40Z",
+  "updatedAt": "2025-03-02T16:08:48Z",
+  "vendor": "graphql-client-test",
+  "productType": "snowboard",
+  "tags": [
+    "Accessory",
+    "Sport",
+    "Winter"
+  ],
+  "status": "ACTIVE",
+  "totalInventory": 0,
+  "publishedAt": "2025-03-02T16:04:41Z",
+  "images": {
+    "edges": [
+      {
+        "node": {
+          "id": "gid://shopify/ProductImage/39326394548381",
+          "url": "https://cdn.shopify.com/s/files/1/0711/1881/5389/files/snowboard_purple_hydrogen.png?v=1740931482",
+          "altText": "Top and bottom view of a snowboard. The top view shows a centred hexagonal logo for Hydrogen that\n          appears to radiate outwards, as well as some overlapping hexagons at the bottom. The bottom view shows an\n          abstract angular grid in purples."
+        }
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "gid://shopify/ProductOption/11063359832221",
+      "name": "Title",
+      "values": [
+        "Default Title"
+      ]
+    }
+  ],
+  "variants": {
+    "edges": [
+      {
+        "node": {
+          "id": "gid://shopify/ProductVariant/46541177651357",
+          "title": "Default Title",
+          "sku": "sku-untracked-1",
+          "price": "949.95",
+          "compareAtPrice": null,
+          "inventoryQuantity": 0,
+          "taxCode": "",
+          "inventoryItem": {
+            "id": "gid://shopify/InventoryItem/48627260719261",
+            "tracked": false,
+            "inventoryLevels": {
+              "edges": [
+                {
+                  "node": {
+                    "id": "gid://shopify/InventoryLevel/113547837597?inventory_item_id=48627260719261",
+                    "quantities": [
+                      {
+                        "name": "available",
+                        "quantity": 0
+                      },
+                      {
+                        "name": "incoming",
+                        "quantity": 0
+                      },
+                      {
+                        "name": "committed",
+                        "quantity": 0
+                      },
+                      {
+                        "name": "damaged",
+                        "quantity": 0
+                      },
+                      {
+                        "name": "on_hand",
+                        "quantity": 0
+                      },
+                      {
+                        "name": "quality_control",
+                        "quantity": 0
+                      },
+                      {
+                        "name": "reserved",
+                        "quantity": 0
+                      },
+                      {
+                        "name": "safety_stock",
+                        "quantity": 0
+                      }
+                    ],
+                    "item": {
+                      "id": "gid://shopify/InventoryItem/48627260719261",
+                      "sku": "sku-untracked-1"
+                    },
+                    "location": {
+                      "id": "gid://shopify/Location/79076655261",
+                      "name": "Shop location"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}
