@@ -8,9 +8,18 @@ const ADMIN_API_ACCESS_TOKEN = process.env.ADMIN_API_ACCESS_TOKEN!;
 const API_VERSION = "2025-01";
 
 interface InventoryLevelNode {
+  id: string;
   location: {
     id: string;
     name: string;
+  };
+  quantities: Array<{
+    name: string;
+    quantity: number;
+  }>;
+  item: {
+    id: string;
+    sku: string;
   };
 }
 
@@ -119,6 +128,24 @@ async function fetchAllProducts() {
                   inventoryLevels(first: 10) {
                     edges {
                       node {
+                        id
+                        quantities(names: [
+                          "available", 
+                          "incoming", 
+                          "committed",
+                          "damaged",
+                          "on_hand",
+                          "quality_control",
+                          "reserved",
+                          "safety_stock"
+                        ]) {
+                          name
+                          quantity
+                        }
+                        item {
+                          id
+                          sku
+                        }
                         location {
                           id
                           name
